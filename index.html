@@ -13,6 +13,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 1. The Audio Element -->
+    <audio id="bg-music" src="raabta-instrumental-cover-havanatheband-soundspirit-256k_R2wdUqme.mp3" loop></audio>
+
+    <!-- 2. The JavaScript to trigger autoplay on first interaction -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('bg-music');
+
+            const playAudio = () => {
+                audio.play()
+                    .then(() => {
+                        console.log("Playback started!");
+                        removeListeners();
+                    })
+                    .catch(error => {
+                        console.log("Waiting for user interaction...", error);
+                    });
+            };
+
+            const interactions = ['click', 'touchstart', 'keydown'];
+            
+            const removeListeners = () => {
+                interactions.forEach(event => {
+                    document.removeEventListener(event, playAudio);
+                });
+            };
+
+            interactions.forEach(event => {
+                document.addEventListener(event, playAudio);
+            });
+        });
+  </script>
   <!-- Canvas for Ghibli Particles (Sakura petals & glowing fireflies) -->
   <canvas id="particle-canvas"></canvas>
 
