@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZHILMIL's Sorry | A Heartfelt Journey</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Canvas for Ghibli Particles (Sakura petals & glowing fireflies) -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Soundwave Music Player -->
+  <div class="audio-container" id="audio-container" title="Click to toggle peaceful Ghibli piano track">
+    <div class="sound-wave" id="sound-wave">
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+    </div>
+    <div class="audio-text"><i class="fa-solid fa-music"></i> Ambient Music</div>
+  </div>
+
+  <!-- Hidden HTML5 Audio Element (Safe fallback URL for peaceful Ghibli piano) -->
+  <audio id="bg-audio" loop src="https://movies.myfilms.workers.dev/music/peaceful_piano.mp3" preload="auto"></audio>
+
+  <!-- Floating Magic Bell Button -->
+  <div class="magic-bell-container" id="magic-bell" title="Ring the Magic Bell for fairy dust!">
+    <div class="bell-glow"></div>
+    <div class="bell-wrapper">
+      <i class="fa-solid fa-bell bell-icon"></i>
+    </div>
+    <span class="bell-tooltip">Ring Me ✨</span>
+  </div>
+
+  <!-- Main Showcase Container -->
+  <main class="showcase-container">
+    <!-- Progress Indicator -->
+    <header class="showcase-header">
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="slide-counter" id="slide-counter">Slide 1 of 7</div>
+    </header>
+
+    <!-- Slides Container -->
+    <div class="slides-wrapper" id="slides-wrapper">
+      
+      <!-- Slide 1: Heartfelt Apology -->
+      <section class="slide active" data-slide="1">
+        <div class="slide-content">
+          <div class="image-section">
+            <div class="image-frame">
+              <img src="assets/images/anime/anime_girl_mountain_1779872804251.png" alt="Zhilmil in Mountains" class="anime-image">
+              <div class="frame-sparkle"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">Hey, Zhilmil...</h2>
+            <div class="slide-text">
+              <p>I know it’s been almost 3 months since we last talked, and honestly, I also understand if you never wanted to talk to me again after everything that happened between us.</p>
+              <p class="highlight">Things ended badly because of my mistakes, misunderstandings, and the fights we had, and for that, I’m genuinely sorry.</p>
+              <p>I’m not messaging you to force anything or make things uncomfortable again. I just felt that before moving ahead in life, there were a few things I genuinely wanted to say from my heart at least once.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 2: Updates (Input Zero & Offer) -->
+      <section class="slide" data-slide="2">
+        <div class="slide-content">
+          <div class="image-section">
+            <div class="image-frame">
+              <img src="assets/images/anime/anime_girl_cafe_1779872987796.png" alt="Zhilmil in Cafe" class="anime-image">
+              <div class="frame-sparkle"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">A Small Update</h2>
+            <div class="slide-text">
+              <p>Actually, I also wanted to ask what’s the update regarding the L2 interview you gave for Input Zero, or if there’s any update about the further process?</p>
+              <p>And yeah… <span class="highlight-success">I got an offer too</span>, as you probably already saw in the group. Hoping everything goes well 🤞🏻</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Shifting to Noida -->
+      <section class="slide" data-slide="3">
+        <div class="slide-content">
+          <div class="image-section">
+            <!-- Reuse mountain image or let the landscape carry the mood -->
+            <div class="image-frame">
+              <img src="assets/images/anime/anime_girl_mountain_1779872804251.png" alt="Zhilmil Journey" class="anime-image flipped">
+              <div class="frame-sparkle"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">New Horizons</h2>
+            <div class="slide-text">
+              <p>By tomorrow morning around 11 AM, I’ll be reaching Delhi. Since the work location is Noida, I’ll probably be shifting there soon…</p>
+              <p class="highlight">To be honest, these last few months made me realize a lot of things. Even though we stopped talking, somewhere I still missed you and always wished good things for you. That feeling never became fake for me.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Courage to message -->
+      <section class="slide" data-slide="4">
+        <div class="slide-content">
+          <div class="image-section">
+            <div class="image-frame">
+              <img src="assets/images/anime/anime_girl_flower_1779874148131.png" alt="Zhilmil Smile" class="anime-image">
+              <div class="frame-sparkle"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">When She Smiles...</h2>
+            <div class="slide-text">
+              <p>I don’t know if there will ever be a chance for us to stay in contact again, and maybe that’s also one reason why I finally gathered the courage to message you today.</p>
+              <p>And don’t worry… I’m not trying to force myself back into your life. I know some distances remain forever.</p>
+              <p class="highlight">I just wanted to tell you that your presence genuinely mattered to me, and somewhere it still does.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: The Sacred Meadow -->
+      <section class="slide" data-slide="5">
+        <div class="slide-content">
+          <div class="image-section">
+            <div class="meadow-backdrop-container">
+              <!-- Beautiful procedurally-animated canvas or stylized illustration of a gorgeous Ghibli meadow -->
+              <div class="meadow-sun"></div>
+              <div class="meadow-flower-overlay"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">The Meadow Beyond...</h2>
+            <div class="slide-text">
+              <p>So… there was just one last request from my side.</p>
+              <p class="highlight-quote">“Yahan se bahut door… sahi aur galat ke uss paar ek maidaan tha… yaad hai?”</p>
+              <p>Bas wahi jagah, last time milna chahta tha. 🙃</p>
+              <p class="note">But shayad ye moka bhi God ji ne chin liya… 🙄</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Best Wishes -->
+      <section class="slide" data-slide="6">
+        <div class="slide-content">
+          <div class="image-section">
+            <div class="image-frame">
+              <img src="assets/images/anime/anime_girl_cafe_1779872987796.png" alt="Zhilmil Reflection" class="anime-image flipped">
+              <div class="frame-sparkle"></div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h2 class="slide-title">From the Heart</h2>
+            <div class="slide-text">
+              <p>It’s okay. No problem.</p>
+              <p>I’m not expecting anything in return from this message. I just wanted you to know that every word I’m saying is real and honestly from my heart.</p>
+              <p class="highlight-wishes">And yeah, all the very best to you too 🤞🏻<br>I genuinely hope you receive your offer very, very soon. You truly deserve it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Storybook Ending (Conclusion) -->
+      <section class="slide" data-slide="7">
+        <div class="slide-content-full">
+          <div class="together-frame-container">
+            <div class="together-backdrop"></div>
+            <img src="assets/images/anime/anime_final_story_1779875121754.png" alt="Our Beautiful Story" class="together-image">
+            <div class="together-sparkle-overlay"></div>
+          </div>
+          <div class="together-text-section final-story-text">
+            <p class="final-quote">“Janam kab lena hai aur marna kab hai…<br>ye hum decide nahi kar sakte.<br>Lekin kaise jeena hai…<br>ye hum zaroor decide kar sakte hain…” 🌸</p>
+            <p class="final-narrative">So… Yahi thi kahani…<br>Ek tha Raja, ek thi Raani.<br>Ye Raja to marr gaya… Lekin Raani abhi bhi zinda hai… 🫡</p>
+            <p class="final-thanks">Thanks for coming into my life. Thanks for making moments happier, beautiful, and memorable…<br><span class="final-closing">Thank you. 🙂</span></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Navigation Footer -->
+    <footer class="showcase-footer">
+      <button class="nav-btn btn-back disabled" id="btn-back">
+        <i class="fa-solid fa-arrow-left"></i> Back
+      </button>
+      <button class="nav-btn btn-next" id="btn-next">
+        Next <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
